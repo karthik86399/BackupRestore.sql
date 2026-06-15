@@ -1,0 +1,6 @@
+BACKUP DATABASE CompanyDB
+TO DISK='D:\Backup\CompanyDB.bak'
+WITH INIT, STATS=10;
+
+RESTORE DATABASE CompanyDB
+FROM DISK='D:\Backup\CompanyDB.bak';
